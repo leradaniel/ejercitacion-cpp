@@ -1,0 +1,15 @@
+Codigo;Tipo;Descripcion;Stock;Valor Diario
+A01;1;Aletas mujer;50;200
+A02;1;Aletas varón;50;200
+A03;1;Aletas nino;20;200
+A04;1;Luneta adulto;50;200
+A05;1;Luneta nino;50;200
+A06;1;Snorkel adulto;50;100
+A07;1;Snorkel nino;20;100
+A08;2;Ropa adulto;50;1000
+A09;2;Ropa nino;20;1000
+A10;2;Lastre;100;50
+A11;3;Tanque;100;300
+A13;3;Regulador;100;800
+A14;3;Chaleco adulto;100;1200
+A15;3;Chaleco nino;20;1200

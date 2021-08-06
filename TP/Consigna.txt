@@ -1,0 +1,35 @@
+El trabajo práctico consiste en el desarrollo de programas que abordan tres ejes:
+Arreglos, archivos y estructuras enlazadas
+
+Descripción del problema
+Se debe desarrollar una solución algorítmica para el análisis de los resultados de las elecciones PASO Nacionales en la Ciudad Autónoma
+de Buenos Aires correspondientes al año 2021 donde se deberán renovar trece bancas, correspondientes a igual número de diputados
+nacionales.
+Se presentan 5 listas con 25 candidatos cada una, los primeros 13 corresponden a candidatos "titulares" mientras que los restantes son
+candidatos "suplentes".
+Una vez realizada la elección, para el escrutinio (conteo de votos) se utilizará el Sistema D ´ Hont mecanismo que se utiliza para la
+asignación de las bancas.
+Para una correcta comprensión del problema planteado es importante que vean documentación acerca de la distribución de bancas en
+una elección, para lo cual les proponemos varios links (no son los únicos publicados).
+
+Para desarrollar el algoritmo se cuenta con las siguientes fuentes de datos
+1. Por cada lista número de lista nombre de la lista y nombre de cada uno de los candidatos
+2. Información de cada uno de los votos (número entre 1 y 7 o algún otro valor sexo del votante edad del votante en años)
+Los números entre 1 y 7 son votos válidos, mientras que cualquier otro valor es un voto nulo El valor 0 representa un voto en blanco
+
+Breve síntesis del sistema D ´ Hont a través de un ejemplo
+Se deben asignan 5 bancas bancas luego de una elección para lo cual se presentaron 7 listas
+MÉTODO DE ASIGNACIÓN D ´ HONT
+1. Para obtener una banca, al menos se deben obtener el 3% de los votos:
+Una vez contados todos los votos válidos (no se consideran votos en blanco ni votos nulos) de cada lista votada se
+descartan aquellos que obtuvieron menos del 3%.
+Supongamos en el ejemplo que en 4 listas NO ALCANZARON el 3%, por lo tanto las bancas se van a REPARTIR en las 3
+listas restantes.
+2. Se confecciona una grilla en un papel, donde las filas representan las listas y una columna por cada banca votada (en el
+ejemplo son 5 columnas). El orden de la lista es de mayor a menor en función de la cantidad de votos obtenidos por cada lista
+3. El resultado de cada lista se debe dividir en 1, 2, 3, 4 y 5 (dado que son 5 las bancas en juego). Por ejemplo si la lista 1
+obtuvo 100 votos, se deben obtener los siguientes valores: 100, 50 33, 25 y 20.
+4. Luego se consideran los cinco valores más elevados, y de acuerdo a la cantidad de valores de cada lista serán los
+diputados que obtengan bancas
+5. Finalmente la lista BLANCA obtiene 2 bancas, la lista VERDE obtiene 2 bancas y la lista ROJA obtiene 1 banca. El resto
+de las listas no obtiene bancas por haber obtenido menos del 3% de los votos válidos
